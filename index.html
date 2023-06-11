@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+  
+  <title>Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body >
+
+  <!-- Sign-up form start -->
+  <!-- MOBILE VIEW  -->
+  <section class="lg:hidden">
+    <div class="">
+      <div class="bg-[url(assets/images/illustration-sign-up-mobile.svg)] h-[20rem] bg-cover rounded-b-3xl lg:hidden"></div>
+      <div class="lg:bg-[url(assets/images/illustration-sign-up-desktop.svg)] lg:h-full lg:w- lg:bg-cover lg:rounded-b-3xl hidden lg:flex "></div>
+    </div>
+    <div>
+      <h1 class="text-left font-RobotoBold text-5xl mt-9 p-3 text-DarkSlateGrey-0 font-bold">Stay updated!</h1>
+    </div>
+    <div>
+      <p class="text-[16px] font-Roboto p-3 font-normal text-CharcoalGrey-0"> Join 60,000+ product managers receiving <br>monthly updates on:</p>
+    </div>
+    <div class="p-3 flex my-4 ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+      <p class="font-Roboto font-normal ml-4 text-CharcoalGrey-0">Product discovery and building what <br>matters</p>
+    </div>
+    <div class="p-3 flex my-4 ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+      <p class="font-Roboto font-normal ml-4 text-CharcoalGrey-0">  Measuring to ensure updates are a <br>success
+      </p>
+    </div>
+    <div class="p-3 flex my-4 ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+      <p class="font-Roboto font-normal ml-4 text-CharcoalGrey-0"> And much more!</p>
+    </div>
+    <div class="p-3">
+      <h2 class="font-bold font-RobotoBold text-DarkSlateGrey-0 mb-2 text-sm">Email address</h2>
+      <form>
+        <input class="border-2 w-[95vw] p-3 rounded-lg border-Grey-0 invalid:text-pink-500 invalid:border-4 invalid:border-pink-400 font-Roboto " type="emailInput" name="" id="mail" placeholder="email@company.com">
+        <input class="bg-DarkSlateGrey-0 text-white p-6 font-RobotoBold rounded-xl my-5 w-full text-lg font-bold hover:bg-gradient-to-r hover:from-Tomato-0 hover:to-yellow-500 hover:shadow-lg hover:shadow-Tomato-0" type="button" value="Subscribe to monthly newsletter " id="submitButton" onclick="redirect()">
+      </form>
+    </div>
+  </section>
+
+      <!-- DESKTOP VIEW -->
+
+      <section class="hidedn lg:h-screen lg:grid lg:place-content-center lg:place-items-center lg:bg-slate-200   ">
+        <div class=" hidden lg:flex lg:bg-white lg:w-[60rem] lg:rounded-xl lg:h-[40rem]">
+          <div class="lg:w-[60%]  lg:align-middle lg:my-auto lg:mx-auto">
+            <h1 class="lg:text-left lg:font-RobotoBold lg:text-6xl lg:mt-9 lg:p-3 lg:text-DarkSlateGrey-0 lg:font-bold">Stay updated!</h1>
+            <div>
+              <p class="lg:text-[16px] lg:font-Roboto lg:p-3 lg:font-normal lg:text-CharcoalGrey-0"> Join 60,000+ product managers receiving monthly<br> updates on:</p>
+            </div>
+            <div class="lg:p-3 lg:flex lg:my-2 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+              <p class="lg:font-Roboto lg:font-normal lg:ml-4 lg:text-CharcoalGrey-0">Product discovery and building what matters</p>
+            </div>
+            <div class="lg:p-3 lg:flex lg:my-2 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+              <p class="lg:font-Roboto lg:font-normal lg:ml-4 lg:text-CharcoalGrey-0">  Measuring to ensure updates are success
+              </p>
+            </div>
+            <div class="lg:p-3 lg:flex lg:my-2 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+              <p class="lg:font-Roboto lg:font-normal lg:ml-4 lg:text-CharcoalGrey-0"> And much more!</p>
+            </div>
+            <div class="lg:p-3">
+              <h2 class="lg:font-bold lg:font-RobotoBold lg:text-DarkSlateGrey-0 lg:mb-2 lg:text-sm">Email address</h2>
+              <form action="">
+                <input class="lg:border-2 lg:w-full lg:p-4 lg:rounded-lg lg:border-slate-200 invalid:text-pink-500 invalid:border-4 invalid:border-pink-400 font-Roboto" type="email" name=""  placeholder="email@company.com " id="emailInput">
+                <button class="lg:bg-DarkSlateGrey-0 lg:text-white lg:p-6 lg:font-RobotoBold lg:rounded-xl lg:my-5 lg:w-full lg:text-lg lg:font-bold cursor-pointer hover:bg-gradient-to-r hover:from-Tomato-0 hover:to-yellow-500 hover:shadow-lg hover:shadow-Tomato-0" id="submitButton">
+                  Subscribe to monthly newsletter
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="lg:rounded-lg p-6">
+            <img class="lg:w-full lg:h-full" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+          </div>
+          
+        </div>
+    
+      </section>
+    
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Shubham Srivastava</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

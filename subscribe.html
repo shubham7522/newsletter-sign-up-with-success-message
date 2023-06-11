@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks For Subscribing!</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!-- MOBILE VIEW -->
+    <main class="lg:hidden">
+        <section class="p-5">
+            <div class="mt-40">
+                <img class="" src="./assets/images/icon-success.svg" alt="success-icon">
+                <h2 class="text-left font-RobotoBold text-5xl mt-9 p-3 text-DarkSlateGrey-0 font-bold">Thanks for subscribing!</h2>
+                <p class="font-Roboto text-[17px] font-medium ml-4 text-CharcoalGrey-0">  A confirmation email has been sent to <strong>ash@loremcompany.com.</strong> 
+                Please open it and click the button inside to confirm your subscription.</p>
+                <input class="bg-DarkSlateGrey-0 text-white p-6 font-RobotoBold rounded-xl my-5 w-full text-lg font-bold hover:bg-gradient-to-r hover:from-Tomato-0 hover:to-yellow-500 hover:shadow-lg hover:shadow-Tomato-0" type="button" value="  Dismiss message"onclick="redirect()">
+            </div>
+        </section>
+    </main>
+    <!-- DESKTOP VIEW -->
+    <main>
+        <section class="hidden lg:h-screen lg:grid lg:place-content-center lg:place-items-center lg:bg-CharcoalGrey-0">
+            <div class=" hidden lg:drop-shadow-xl lg:grid lg:bg-white lg:w-[35rem] lg:rounded-3xl lg:h-[35rem] p-10">
+                <img class="mt-5 " src="./assets/images/icon-success.svg" alt="success-icon">
+                <h2 class="text-left font-RobotoBold text-5xl  text-DarkSlateGrey-0 font-bold">Thanks for subscribing!</h2>
+                <p class="font-Roboto text-[17px] font-medium ml-4 text-CharcoalGrey-0">  A confirmation email has been sent to <strong id='text'>ash@loremcompany</strong> 
+                .Please open it and click the button inside to confirm your subscription.</p>
+                <input class="bg-DarkSlateGrey-0 text-white p-6 font-RobotoBold rounded-xl my-5 w-full text-lg font-bold hover:bg-gradient-to-r hover:from-Tomato-0 hover:to-yellow-500 hover:shadow-lg hover:shadow-Tomato-0 cursor-pointer" type="button" value="  Dismiss message" onclick="redirect()">
+            </div>
+
+        </section>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
